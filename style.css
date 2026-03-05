@@ -601,7 +601,7 @@ footer .top-side h1 {
 }
 /*Footer-Ends*/
 
-/* Cart-page */
+/* Cart-page-STARTS */
 .cart {
   display: flex;
   flex-direction: column;
@@ -619,7 +619,8 @@ footer .top-side h1 {
 .cart-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+gap: 40px;
+justify-content: center;
 }
 .items-in-cart {
   border: 1px #00000010 solid;
@@ -699,16 +700,125 @@ footer .top-side h1 {
 }
 
 /*order-summary*/
-.order-summary{
+.order-summary {
   display: flex;
   border: 1px #00000010 solid;
   padding: 24px;
   border-radius: 20px;
   flex-direction: column;
 }
-.order-summary div{
+.order-summary div {
   display: flex;
   flex-direction: row;
   align-items: center;
+  line-height: 0;
   justify-content: space-between;
 }
+.order-summary h4 {
+  font-family: "Satoshi";
+  font-size: 24px;
+  color: #000000;
+}
+.sub-total p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  color: #00000059;
+}
+.sub-total span {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.discount p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  color: #00000059;
+}
+.discount span {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff3333;
+}
+.dilevery-fee p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  color: #00000059;
+}
+.dilevery-fee span {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.total-check p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  color: #000000;
+}
+.total-check span {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.promo-area {
+  width: 326px;
+  height: 48px;
+  border: none;
+  font-family: "Satoshi";
+  border-radius: 62px;
+  margin-right: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #00000040;
+  background-color: #f0f0f0;
+}
+.apply-button {
+  border-radius: 62px;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 200;
+  background-color: #000000;
+  width: 119px;
+  height: 48px;
+  transition: 0.3s ease;
+  font-family: "Satoshi";
+}
+.apply-button:hover{
+background-color: #000000de;
+}
+.Checkout-button {
+  width: 457px;
+  height: 60px;
+  border: none;
+  border-radius: 62px;
+  padding: 12px 16px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Satoshi";
+    transition: 0.3s ease;
+
+   background-color: #000000;
+}
+.Checkout-button:hover{
+background-color: #000000de;
+letter-spacing: 4px;
+}
+.Checkout-button i{
+color: #ffffff;
+margin-left:10px;
+font-size: 18px;
+}
+/*cart-page-ENDs*/

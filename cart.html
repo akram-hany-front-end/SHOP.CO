@@ -26,6 +26,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -99,12 +106,8 @@
           </div>
           <div class="order-summary">
             <h4>Order Summary</h4>
-            <div class="bill-info">
-              <div class="left-order-summary"></div>
-              <div class="right-order-summary"></div>
-            </div>
             <div class="sub-total">
-              <p>Total</p>
+              <p>Subtotal</p>
               <span>$0</span>
             </div>
             <div class="discount">
@@ -117,14 +120,16 @@
             </div>
             <div class="total-check">
               <p>Total</p>
-              $0
+              <span>$0</span>
             </div>
             <div class="promo">
-              <input type="text" />
-              <button>Apply</button>
+              <input placeholder="Add promo code" class="promo-area" type="text" />
+              <button class="apply-button">Apply</button>
             </div>
             <div class="button-fix">
-              <button>Checkout<i class="fa-solid fa-arrow-right"></i></button> 
+              <button class="Checkout-button">
+                Checkout<i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
