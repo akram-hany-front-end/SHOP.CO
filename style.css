@@ -697,3 +697,18 @@ footer .top-side h1 {
 .right-cart i:hover {
   background-color: #05000060;
 }
+
+/*order-summary*/
+.order-summary{
+  display: flex;
+  border: 1px #00000010 solid;
+  padding: 24px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.order-summary div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
