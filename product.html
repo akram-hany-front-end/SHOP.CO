@@ -3,75 +3,581 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>single category</title>
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="container">
+
+
+      <div class="sign_up_now">
+        <h4>
+          Sign up and get 20%off to your first order.
+          <a href="#">Sign Up Now!</a>
+        </h4>
+      </div>
+
+      <header>
+        <div class="header-logo">
+          <h4>SHOP.CO</h4>
+        </div>
+        <div class="header-links">
+          <div class="span-container">
+            <span class="shop-btn"
+              >Shop<i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <a href="#">On Sale</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Brands</a>
+        </div>
+        <div class="header-search">
+          <i class="fa fa-search"></i>
+          <input placeholder="Search for products..." type="search" />
+        </div>
+        <div class="header-icons">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-circle-user"></i>
+        </div>
+      </header>
+
+
+
+    <div class="category-container">
+
+
+
       <div class="left-single-category">
         <div class="title">
-          <h3></h3>
-          <i></i>
+          <h3>Filters</h3>
+          <i class="fa-solid fa-sliders"></i>
         </div>
+
         <div class="filter-category">
-          <h6></h6>
-          <h6></h6>
-          <h6></h6>
-          <h6></h6>
-          <h6></h6>
+          <h6>T-shirt</h6>
+          <h6>Shorts</h6>
+          <h6>Hoodie</h6>
+          <h6>Jeans</h6>
         </div>
+
         <div class="filter-price">
-          <h3></h3>
-          <input type="radio" name="" id="" />
+           <label for="priceRange"
+            >Price:  <span  id="priceValue">$ 10</span></label
+          >
+
+          <input
+            class="price-range"
+            style="width: 100px; cursor: pointer"
+            type="range"
+            min="10"
+            max="200"
+            step="10"
+            value="10"
+            id="priceRange"
+          />
         </div>
-        <div class="filter-color"><h3></h3></div>
-        <div class="filter-size">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+       
         <div class="dress-style">
-          <h3></h3>
-          <h6></h6>
-          <h6></h6>
-          <h6></h6>
-          <h6></h6>
-        </div>
-        <button>Apply Filter</button>
+          <h3>Dress Style</h3>
+          <h6>Casual</h6>
+          <h6>Sports</h6>
+          <h6>Formal</h6>
+          <h6>party</h6>
+         </div>
+        <button class="apply-btn">Apply Filter</button>
       </div>
-      <div class="right-single-category">
-        <h2></h2>
-        <div class="products-list">
-          <div class="single-product-card-style">
-            <img src="" alt="" />
-            <h6></h6>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
 
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
 
-              <span>3.5/5</span>
-            </div>
-            <div class="price">
-              <p>$130</p>
-              <p class="discount">$160</p>
-              <span>-30%</span>
-            </div>
-          </div>
-        </div>
-        <div class="pagination">
-          <button><</button>
-          <span>1</span>
-          <button>></button>
-        </div>
+
+     <div class="right-single-category">
+  <h2>Casual</h2>
+
+  <div class="products-list" id="products-list">
+    
+    <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
       </div>
     </div>
+ <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div> <div class="single-product-card-style">
+      <img src="img/product1.png" alt="" />
+      <h6>Gradient Graphic T-shirt</h6>
+
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+        <span style="color:#000;">3.5/5</span>
+      </div>
+
+      <div class="price">
+        <p>$130</p>
+        <p class="discount">$160</p>
+        <span>-30%</span>
+      </div>
+    </div>
+
+    <!-- باقي المنتجات هنا -->
+
+  </div>
+
+  <div class="pagi" id="pagination"></div>
+
+</div>
+
+    </div>
+
+
+
+
+      <footer>
+        <div class="top-side">
+          <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+          <div class="news">
+            <input placeholder="Enter your email address" type="text" />
+            <button>Subscribe to Newsletter</button>
+          </div>
+        </div>
+        <div class="mid-side">
+          <div class="logo-footer">
+            <h4>SHOP.CO</h4>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div class="social-icons">
+              <img src="img/1.png" alt="Twitter" />
+              <img src="img/2.png" alt="Facebook" />
+              <img src="img/3.png" alt="Instgram" />
+              <img src="img/4.png" alt="GitHub" />
+            </div>
+          </div>
+          <div class="col-footer">
+            <h6>COMPANY</h6>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Works</a>
+            <a href="#">Career</a>
+          </div>
+          <div class="col-footer">
+            <h6>HELP</h6>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Terma & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="col-footer">
+            <h6>FAQ</h6>
+            <a href="#">Account</a>
+            <a href="#">Manage Deliveries</a>
+            <a href="#">Orders</a>
+            <a href="#">Payment</a>
+          </div>
+          <div class="col-footer">
+            <h6>RESOURCES</h6>
+            <a href="#">Free eBook</a>
+            <a href="#">Development Tutorial</a>
+            <a href="#">How to-Blog</a>
+            <a href="#">Youtube Playlist</a>
+          </div>
+        </div>
+        <div class="bottom-side">
+          <div class="copyrights">
+            <p>
+              © 2025-2026, All rights reserved Build By <span>AKRAM HANY</span>
+            </p>
+          </div>
+          <div class="pay-methods">
+            <img src="img/Badge (1).png" alt="" />
+            <img src="img/Badge (2).png" alt="" />
+            <img src="img/Badge (3).png" alt="" />
+            <img src="img/Badge.png" alt="" />
+            <img src="img/Badge (4).png" alt="" />
+          </div>
+        </div>
+      </footer>
+    <script src="category.js"></script>
   </body>
 </html>

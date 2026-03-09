@@ -79,6 +79,11 @@ prev.onclick = () => {
     shoowAll = !shoowAll;
     updatesView();
   });
- 
+
+  // login////////////
+let userIcon = document.getElementById("userIcon")
+ userIcon.addEventListener("click", function () {
+  window.location.href = "login.html"
+ })
  
 
